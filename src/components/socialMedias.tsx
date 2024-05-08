@@ -13,8 +13,10 @@ export function SocialMedias(){
         <TooltipProvider>
             <Tooltip>
                 <TooltipTrigger asChild>
-                    <Button variant="ghost" size="icon" className='p-1  w-8 h-8  hover:border-b rounded-none  border-b-cyan-600'>
-                        <Github size={18}/>
+                    <Button variant="ghost" size="icon" className='p-4  w-10 h-10  hover:border-b-2 rounded-none  border-b-cyan-600 '>
+                        <a href="https://github.com/mateusmaiia" target='_blank' >
+                            <Github size={18}/>
+                        </a>
                     </Button>
                 </TooltipTrigger>
                 <TooltipContent>
