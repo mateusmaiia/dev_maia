@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { SideMenu } from "./sideMenu";
 import { ThemeToggle } from "./theme/theme-toggle";
+import { SocialMedias } from './socialMedias'
 
 export function Header() {
   const [bars, setBars] = useState(false);
@@ -16,8 +17,9 @@ export function Header() {
   return (
     <header className="fixed top-0 w-full backdrop-blur-sm">
       <div className="w-full p-4 mx-auto max-w-screen-lg flex items-center justify-between">
+  
         <h1 className="text-lg md:text-2xl font-bold z-50">Dev Portfolio</h1>
-        <nav className="md:ml-auto hidden md:block">
+        <nav className=" hidden md:block">
           <SideMenu handleClickMenu={handleClickMenu} isOpen={sideMenuOpen}/>
           
           <ul className="flex items-center  gap-4 md:gap-8">
@@ -33,11 +35,16 @@ export function Header() {
             <li>
               <a href="#skills" className="relative text-base md:text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#3b9be5] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Skills</a>
             </li>
-            <li className="ml-2">
+            {/* <li className="ml-2">
               <ThemeToggle />
-            </li>
+            </li> */}
           </ul>
         </nav>
+        <div className='flex items-center gap-2'>
+          <SocialMedias />
+          <SocialMedias />
+          <ThemeToggle />
+        </div>
         <div className="flex items-center justify-center md:hidden">
           <div className="z-50">
             <ThemeToggle />
