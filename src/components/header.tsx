@@ -37,12 +37,16 @@ export function Header() {
             </li>
           </ul>
         </nav>
-        <div className='flex items-center gap-1'>
-          <SocialMedias />
-          <SocialMedias />
-          <ThemeToggle />
+        <div className='hidden md:block'>
+          <div className='flex items-center gap-1 md:block'>
+            <SocialMedias socialMediaName='Github'  socialMediaIcon='github' url='https://github.com/mateusmaiia'/>
+            <SocialMedias socialMediaName='Instagram' socialMediaIcon='instagram' url='https://instagram.com/matteusmaia_'/>
+            <SocialMedias socialMediaName='Linkedin' socialMediaIcon='linkedin' url='https://www.linkedin.com/in/mateus-maia-690218273/'/>
+          <ThemeToggle /> 
+          </div>
         </div>
-        <div className="flex items-center justify-center md:hidden">
+       
+        <div className="flex items-center justify-center  md:hidden">
           <div className="z-50">
             <ThemeToggle />
           </div>
