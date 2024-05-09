@@ -1,3 +1,5 @@
+import { SocialMedias } from './socialMedias'
+
 interface Props{
   handleClickMenu: () => void
   isOpen: boolean,
@@ -26,7 +28,11 @@ export function SideMenu({ isOpen, handleClickMenu }:Props) {
           <a href="#skills" className="text-2xl text-center font-semibold " onClick={handleClickOption}>Skills</a>
         </li>
       </ul>
-    
+      <div className='flex items-center gap-1 md:block mt-4'>
+          <SocialMedias socialMediaName='Github'  socialMediaIcon='github' url='https://github.com/mateusmaiia'/>
+          <SocialMedias socialMediaName='Instagram' socialMediaIcon='instagram' url='https://instagram.com/matteusmaia_'/>
+          <SocialMedias socialMediaName='Linkedin' socialMediaIcon='linkedin' url='dawd'/>
+      </div>
     </div>
   );
 }
