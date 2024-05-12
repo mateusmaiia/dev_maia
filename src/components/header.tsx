@@ -24,7 +24,7 @@ export function Header() {
           
           <ul className="flex items-center  gap-4 md:gap-8">
             <li>
-              <a href="#contact" className="relative text-base md:text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#3b9be5] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Contato</a>
+              <a href="#contact" className="relative text-base md:text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#3b9be5] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Fale comigo</a>
             </li>
             <li>
               <a href="#about" className="relative text-base md:text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#3b9be5] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Sobre</a>
