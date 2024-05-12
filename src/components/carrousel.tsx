@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel"
 
 interface Props{
-  CarouselImages?: string[]
+  CarouselImages: string[]
 }
 export function CarouselDApiDemo({CarouselImages}: Props) {
   const [api, setApi] = React.useState<CarouselApi>()

@@ -15,7 +15,7 @@ export interface ProjectCardTriggerProps{
   ProjectNameDialog: string,
   ProjectDescriptionDialog: string,
   urlCardTrigger: string,
-  CarouselImages?: string[]
+  CarouselImages: string[]
 }
 export function ProjectCardTrigger({ProjectCardDescriptionTrigger, ProjectCardNameTrigger, ProjectDescriptionDialog, ProjectNameDialog, urlCardTrigger, CarouselImages }: ProjectCardTriggerProps){
   return(
