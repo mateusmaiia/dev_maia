@@ -5,6 +5,19 @@ export function Projects ( ){
 
   const projects = [
     {
+      urlCardTrigger:"https://raw.githubusercontent.com/famgz/famgz/main/presentations/controle-de-caixas/1.jpg",
+      
+      ProjectCardDescriptionTrigger: "Project Card Description 1",
+      ProjectNameDialog: "Projec Name Dialog 1",
+      ProjectCardNameTrigger: "Project Card Name Trigger",
+      ProjectDescriptionDialog: "Project DescriptionDialog",
+      CarouselImages: [
+        "https://raw.githubusercontent.com/famgz/famgz/main/presentations/controle-de-caixas/1.jpg",
+        "https://raw.githubusercontent.com/famgz/famgz/main/presentations/barbershop-app/1.jpg",
+        
+      ]
+    },
+    {
       urlCardTrigger: "https://raw.githubusercontent.com/famgz/famgz/main/presentations/barbershop-app/1.jpg",
       ProjectCardDescriptionTrigger: "Project Card Description 1",
       ProjectNameDialog: "Projec Name Dialog 1",
