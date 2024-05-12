@@ -4,6 +4,8 @@ import { Section } from './components/section'
 import { ThemeProvider } from './components/theme/themeProvider'
 import './globals.css'
 import { Projects } from './components/projects'
+import { Contact } from './components/contact'
+import { Skills } from './components/skills'
 
 export function App() {
 
@@ -14,6 +16,8 @@ export function App() {
       <Section />
       <About />
       <Projects />
+      <Contact />
+      <Skills />
     </div>
     </ThemeProvider>
   )
