@@ -10,24 +10,22 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel"
 
-export function CarouselDApiDemo() {
+interface Props{
+  CarouselImages?: string[]
+}
+export function CarouselDApiDemo({CarouselImages}: Props) {
   const [api, setApi] = React.useState<CarouselApi>()
   const [current, setCurrent] = React.useState(0)
   const [count, setCount] = React.useState(0)
 
-  const images = [
-    "https://raw.githubusercontent.com/famgz/famgz/main/presentations/controle-de-caixas/1.jpg",
-    "https://raw.githubusercontent.com/famgz/famgz/main/presentations/barbershop-app/1.jpg",
-    "https://raw.githubusercontent.com/famgz/famgz/main/presentations/controle-de-caixas/1.jpg",
-
-  ]
+ 
 
   React.useEffect(() => {
     if (!api) {
       return
     }
 
-    setCount(images.length)
+    setCount(CarouselImages.length)
     setCurrent(api.selectedScrollSnap() + 1)
 
     api.on("select", () => {
@@ -40,7 +38,7 @@ export function CarouselDApiDemo() {
     <div>
       <Carousel setApi={setApi} className="w-full max-w-xs">
         <CarouselContent>
-          {images.map((image, index) => (
+          {CarouselImages.map((image, index) => (
             <CarouselItem key={index}>
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
