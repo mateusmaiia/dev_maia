@@ -6,7 +6,7 @@ export function Contact(){
   return(
     <div id="contact" className="grid grid-cols-2 h-[600px] md:h-[620px] md:pt-10 mx-auto md:max-w-[1500px] px-40 border-y w-full">
       <div className="flex flex-col w-full items-center  justify-center">
-       <div className="flex flex-start flex-col">
+       <div className="flex  flex-start flex-col ml-11 md:ml-0">
           <h1 className="text-4xl font-semibold tracking-tight mb-5">Fale comigo!</h1>
           <Button variant="ghost" className="flex gap-2">
             <Mail size="22px" />
