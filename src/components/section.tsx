@@ -22,7 +22,7 @@ export function Section() {
         </div>
       </div>
       <div className=" flex justify-center   md:justify-end">
-        <img className="h-64 w-h-64 md:h-[380px] md:w-[380px] mb-10 rounded-full md:ml-10 hidden" src="https://avatars.githubusercontent.com/u/131715627?v=4" alt="Mateus Maia" />
+        <img className="h-64 w-h-64 md:h-[380px] md:w-[380px] mb-10 rounded-full md:ml-10 " src="https://avatars.githubusercontent.com/u/131715627?v=4" alt="Mateus Maia" />
       </div>
     </div>
   );
