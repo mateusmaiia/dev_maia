@@ -6,6 +6,7 @@ import './globals.css'
 import { Projects } from './components/projects'
 import { Contact } from './components/contact'
 import { Skills } from './components/skills'
+import { Footer } from './components/footer'
 
 export function App() {
 
@@ -18,6 +19,7 @@ export function App() {
       <Projects />
       <Contact />
       <Skills />
+      <Footer />
     </div>
     </ThemeProvider>
   )
