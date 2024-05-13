@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { Download } from "lucide-react";
+import CV from '@/assets/Curriculo Mateus Maia .pdf'
 
 export function Section() {
   return (
@@ -10,8 +11,10 @@ export function Section() {
         <h3 className="text-accent-foreground-foreground mt-1 tracking-wide dark:text-zinc-300 ">Desenvolvedor de software</h3>
           
         <div className="flex flex-col md:flex-row md:gap-5 mt-6">
-          <Button className="w-full md:w-auto text-sm md:text-base bg-[#172554] text-white dark:hover:text-black flex items-center justify-center gap-2" size="lg">
-            <Download size="22px" /> Baixar CV
+          <Button className="w-full md:w-auto text-sm md:text-base bg-[#172554] text-white dark:hover:text-black " size="lg">
+            <a href={CV} target='_blank' className='flex items-center gap-3'>
+              <Download size="22px" /> Baixar CV
+            </a>
           </Button>
           <Button className="w-full md:w-auto text-sm md:text-base mb-14 md:mb-0 mt-2 md:mt-0" size="lg" variant="outline">
             Entrar em contato
@@ -19,7 +22,7 @@ export function Section() {
         </div>
       </div>
       <div className=" flex justify-center   md:justify-end">
-        <img className="h-64 w-h-64 md:h-[380px] md:w-[380px] mb-10 rounded-full md:ml-10" src="https://avatars.githubusercontent.com/u/131715627?v=4" alt="Mateus Maia" />
+        <img className="h-64 w-h-64 md:h-[380px] md:w-[380px] mb-10 rounded-full md:ml-10 hidden" src="https://avatars.githubusercontent.com/u/131715627?v=4" alt="Mateus Maia" />
       </div>
     </div>
   );
