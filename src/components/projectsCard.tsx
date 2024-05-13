@@ -15,7 +15,7 @@ export interface ProjectCardProps{
 
 export function ProjectsCard({ProjectCardName, ProjectCardDescription, urlCard}: ProjectCardProps){
   return(
-    <Card className="cursor-pointer dark:hover:bg-white/5 hover:bg-black/10 hover:scale-105 transition ease-in-out delay-75">
+    <Card className="w-[370px] h-[350px] md:w-[340px] md:h-[350px] cursor-pointer dark:hover:bg-white/5 hover:bg-black/10 hover:scale-105 transition ease-in-out delay-75">
       <CardContent className='p-6'>
         <TooltipProvider>
           <Tooltip>
