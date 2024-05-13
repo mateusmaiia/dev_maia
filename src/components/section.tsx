@@ -7,7 +7,7 @@ export function Section() {
       <div className="order-last md:order-first w-full mx-auto flex items-center  flex-col md:items-start justify-center">
         
         <h1 className="text-4xl md:text-5xl tracking-tighter font-semibold">Mateus Maia</h1>
-        <h3 className="text-accent-foreground-foreground mt-1 tracking-wide text-zinc-300 ">Desenvolvedor de software</h3>
+        <h3 className="text-accent-foreground-foreground mt-1 tracking-wide dark:text-zinc-300 ">Desenvolvedor de software</h3>
           
         <div className="flex flex-col md:flex-row md:gap-5 mt-6">
           <Button className="w-full md:w-auto text-sm md:text-base bg-[#172554] text-white dark:hover:text-black flex items-center justify-center gap-2" size="lg">
