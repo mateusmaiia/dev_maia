@@ -10,7 +10,7 @@ export function Contact(){
           <h1 className="text-4xl font-semibold tracking-tight mb-5">Fale comigo!</h1>
           <Button variant="ghost" className="flex gap-2">
             <Mail size="22px" />
-            <a href="matteusmaia@gmail.com" className="flex items-center justify-between w-full">matteusmaia@gmail.com</a>
+            <a href="mateusssmaia@gmail.com" className="flex items-center justify-between w-full">mateusssmaia@gmail.com</a>
           </Button>
           <Button variant="ghost" className="flex gap-2 justify-start">
             <Smartphone size="22px" className="right-auto"/>
