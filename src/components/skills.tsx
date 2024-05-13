@@ -18,9 +18,9 @@ const skillsLogo = [
 ]
 export function Skills(){
   return(
-    <div id="skills" className="mx-auto md:max-w-[1500px] w-full borde border-t-white/10 md:h-[760px] p-4 md:p-4 md:px-72">
+    <div id="skills" className="mx-auto md:max-w-[1500px] w-full borde border-t-white/10 md:h-[760px] mb-11  md:p-4 md:px-72">
         <h1 className="text-center text-4xl font-semibold mb-8 mt-10">Skills</h1>
-        <div className="grid grid-cols-2 md:grid-cols-5 w-full  items-center justify-center md:gap-2 gap-2 gap-y-2">
+        <div className="grid grid-cols-2 md:grid-cols-5 w-5/6 md:w-full mx-auto items-center justify-center md:gap-2 gap-3 gap-y-4">
           {skillsLogo.map((skillLogo, index) => (
             <SkillCard key={index} urlSkill={skillLogo} />
           ))}
