@@ -17,11 +17,18 @@ export function Section() {
         <h3 className="text-accent-foreground-foreground mt-1 tracking-wide dark:text-zinc-300 ">Desenvolvedor de software</h3>
           
         <div className="flex flex-col md:flex-row md:gap-5 mt-6">
-          <Button className="w-full md:w-auto text-sm md:text-base bg-[#172554] text-white dark:hover:text-black " size="lg">
-            <a href={CV} target='_blank' className='flex items-center gap-3'>
-              <Download size="22px" /> Baixar CV
-            </a>
-          </Button>
+          <motion.span
+            initial={{opacity: 0, scale: 0}}
+            whileInView={{opacity: 1, scale: 1}}
+            exit={{opacity: 0, scale: 0}}
+            transition={{duration: 0.5, delay: 0.1}}
+          >
+            <Button className="w-full md:w-auto text-sm md:text-base bg-[#172554] text-white dark:hover:text-black " size="lg">
+              <a href={CV} target='_blank' className='flex items-center gap-3'>
+                <Download size="22px" /> Baixar CV
+              </a>
+            </Button>
+          </motion.span>
           <Button className="w-full md:w-auto text-sm md:text-base mb-14 md:mb-0 mt-2 md:mt-0" size="lg" variant="outline">
             Entrar em contato
           </Button>
