@@ -16,7 +16,12 @@ export function Header() {
 
 
   return (
-    <motion.header className="fixed top-0 w-full backdrop-blur-sm">
+    <motion.header
+      initial={{top: -100}}
+      animate={{top: 0}}
+      transition={{duration: 0.5}} 
+      className="fixed top-0 w-full backdrop-blur-sm"
+    >
       <div className="w-full p-4 mx-auto max-w-screen-lg flex items-center justify-between">
   
         <h1 className="text-lg md:text-2xl font-bold z-50">Dev Portfolio</h1>
