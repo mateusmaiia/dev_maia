@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SideMenu } from "./sideMenu";
 import { ThemeToggle } from "./theme/theme-toggle";
 import { SocialMedias } from './socialMedias'
+import {motion} from 'framer-motion'
 
 export function Header() {
   const [bars, setBars] = useState(false);
@@ -15,7 +16,7 @@ export function Header() {
 
 
   return (
-    <header className="fixed top-0 w-full backdrop-blur-sm">
+    <motion.header className="fixed top-0 w-full backdrop-blur-sm">
       <div className="w-full p-4 mx-auto max-w-screen-lg flex items-center justify-between">
   
         <h1 className="text-lg md:text-2xl font-bold z-50">Dev Portfolio</h1>
@@ -67,6 +68,6 @@ export function Header() {
         <SideMenu isOpen={sideMenuOpen} handleClickMenu={handleClickMenu} />
         </div>
         </div>
-    </header>
+    </motion.header>
   );
 }
