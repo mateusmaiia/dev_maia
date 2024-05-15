@@ -12,9 +12,9 @@ export function About(){
         <h2 className="text-center text-4xl font-semibold mb-6">Sobre</h2>
       </motion.div>
       <motion.p 
-        initial={{opacity: 0.5, scale: 0}}
+        initial={{opacity: 0.4, scale: 0.7}}
         whileInView={{opacity: 1, scale: 1}}
-        exit={{opacity: 0.5, scale: 0}}  
+        exit={{opacity: 0.4, scale: 0.4}}  
         transition={{duration: 0.5}}
         className="text-center dark:text-slate-400 text-lg md:text-lg w-4/6 max-w-3xl  font-light tracking-wider"
       >
