@@ -29,9 +29,17 @@ export function Section() {
               </a>
             </Button>
           </motion.span>
-          <Button className="w-full md:w-auto text-sm md:text-base mb-14 md:mb-0 mt-2 md:mt-0" size="lg" variant="outline">
-            Entrar em contato
-          </Button>
+          
+          <motion.span
+            initial={{opacity: 0, scale: 0}}
+            whileInView={{opacity: 1, scale: 1}}
+            exit={{opacity: 0, scale: 0}}
+            transition={{duration: 0.6, delay: 0.2}}
+          >
+            <Button className="w-full md:w-auto text-sm md:text-base mb-14 md:mb-0 mt-2 md:mt-0" size="lg" variant="outline">
+              Entrar em contato
+            </Button>
+          </motion.span>
         </div>
       </motion.div>
       <motion.div
