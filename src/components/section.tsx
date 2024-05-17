@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Download } from "lucide-react";
+ import { Download } from "lucide-react";
 import CV from '@/assets/Curriculo Mateus Maia .pdf'
 import {motion} from 'framer-motion'
 
@@ -23,11 +23,16 @@ export function Section() {
             exit={{opacity: 0, scale: 0}}
             transition={{duration: 0.5, delay: 0.1}}
           >
+            {/*
             <Button className="w-full md:w-auto text-sm md:text-base bg-[#172554] text-white dark:hover:text-black " size="lg">
-              <a href={CV} target='_blank' className='flex items-center gap-3'>
-                <Download size="22px" /> Baixar CV
-              </a>
-            </Button>
+              
+                
+          </Button> */}
+             <a href={CV} target='_blank' className='flex items-center gap-4'>
+             <button className="inline-flex h-12 gap-2 cursor-pointer w-full text-slate-100  dark:hover:text-black animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+             <Download size="22px" color='#fff'/> Baixar CV
+            </button>
+          </a>
           </motion.span>
           
           <motion.span
